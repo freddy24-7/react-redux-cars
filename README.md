@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# React Redux Playlist App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React Redux application that allows you to create and manage playlists for movies and songs.
+The code is taken from Steven Grider's [Modern React with Redux](https://www.udemy.com/course/react-redux/) course on Udemy.
+The code illustrates how to use Redux with React to manage the state of the application, using React Redux Toolkit.
+Beyond that, a useful search functionality is also part of this project.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before running the application, make sure you have the following installed:
 
-### `npm start`
+- Node.js
+- npm (Node Package Manager)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+```bash
+git clone <repository-url>
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+```bash
+cd react-redux-playlist-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+To start the application, run the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the development server and open the application in your default browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Add movies and songs to the playlists
+- Remove movies and songs from the playlists
+- Reset both playlists to the initial state
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The project structure is as follows:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src`
+    - `components`
+        - `MoviePlaylist.js` - Component for the movie playlist
+        - `SongPlaylist.js` - Component for the song playlist
+    - `data`
+        - `index.js` - Functions to create random movies and songs
+    - `slices`
+        - `MoviesSlice.js` - Redux slice for managing the movie playlist state
+        - `SongsSlice.js` - Redux slice for managing the song playlist state
+    - `store`
+        - `index.js` - Redux store configuration
+        - `actions.js` - Redux actions
+    - `App.js` - Main component that renders the playlists and reset button
+    - `index.js` - Entry point of the application
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React - JavaScript library for building user interfaces
+- Redux - State management library for JavaScript applications
+- Bulma - CSS framework for styling the application
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the [MIT License](LICENSE).
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore and customize the application to suit your needs. Enjoy managing your playlists with React Redux!
