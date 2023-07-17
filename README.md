@@ -1,9 +1,6 @@
-# React Redux Playlist App
+# React Redux Car List App
 
-This is a simple React Redux application that allows you to create and manage playlists for movies and songs.
-The code is taken from Steven Grider's [Modern React with Redux](https://www.udemy.com/course/react-redux/) course on Udemy.
-The code illustrates how to use Redux with React to manage the state of the application, using React Redux Toolkit.
-Beyond that, a useful search functionality is also part of this project.
+This is a simple React Redux application that allows you to create a car list with search functionality and calculate the total cost of the cars.
 
 ## Prerequisites
 
@@ -23,7 +20,7 @@ git clone <repository-url>
 2. Navigate to the project directory:
 
 ```bash
-cd react-redux-playlist-app
+cd react-redux-car-list-app
 ```
 
 3. Install the dependencies:
@@ -44,9 +41,10 @@ This will start the development server and open the application in your default 
 
 ## Features
 
-- Add movies and songs to the playlists
-- Remove movies and songs from the playlists
-- Reset both playlists to the initial state
+- Add cars to the list with name and cost
+- Remove cars from the list
+- Search for cars by name
+- Calculate the total cost of the cars
 
 ## Project Structure
 
@@ -54,17 +52,16 @@ The project structure is as follows:
 
 - `src`
     - `components`
-        - `MoviePlaylist.js` - Component for the movie playlist
-        - `SongPlaylist.js` - Component for the song playlist
-    - `data`
-        - `index.js` - Functions to create random movies and songs
+        - `CarForm.js` - Component for adding cars to the list
+        - `CarList.js` - Component for rendering the car list
+        - `CarSearch.js` - Component for searching cars by name
+        - `CarValue.js` - Component for calculating the total cost of the cars
     - `slices`
-        - `MoviesSlice.js` - Redux slice for managing the movie playlist state
-        - `SongsSlice.js` - Redux slice for managing the song playlist state
+        - `carsSlice.js` - Redux slice for managing the car list state
+        - `formSlice.js` - Redux slice for managing the form state
     - `store`
         - `index.js` - Redux store configuration
-        - `actions.js` - Redux actions
-    - `App.js` - Main component that renders the playlists and reset button
+    - `App.js` - Main component that renders the car list app
     - `index.js` - Entry point of the application
 
 ## Technologies Used
@@ -79,4 +76,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to explore and customize the application to suit your needs. Enjoy managing your playlists with React Redux!
+Feel free to explore and customize the application to suit your needs. Enjoy managing your car list with React Redux!
