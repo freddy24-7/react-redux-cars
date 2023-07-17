@@ -1,6 +1,7 @@
 # React Redux Car List App
 
 This is a simple React Redux application that allows you to create a car list with search functionality and calculate the total cost of the cars.
+The code is taken from Stephen Grider's Udemy course [Modern React with Redux](https://www.udemy.com/course/react-redux/).
 
 ## Prerequisites
 
